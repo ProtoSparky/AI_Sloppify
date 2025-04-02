@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Ai-Sloppify",
+    "version": "1.0",
+  
+    "description": "Worsens your google experience",
+    "author":"Sparky",
+    "homepage_url":"https://github.com/ProtoSparky/AI_Sloppify",
+    "content_scripts": [
+      {
+        "matches": ["*://*.google.com/*"],
+        "js": ["main.js"]
+      }
+    ],
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "http://localhost/*"
+    ]
+}  
