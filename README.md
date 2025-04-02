@@ -1,4 +1,4 @@
-# AI_Slopify
+# AI_Sloppify
 This firefox browser extension makes your google experience worse!
 
 Oh yea it kinda works, but not really
