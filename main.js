@@ -5,12 +5,12 @@ var divNotFound = true;
 for (let div of divs) {
     if (div.textContent.trim() === "People also ask" && divNotFound) {
         divNotFound = false;
-        /*
+        
         console.log("Found div:", div);
         // Navigate up the tree
         let parent = div.parentElement; // Direct parent
         console.log("Parent:", parent);
-        console.log(parent.children);*/
+        console.log(parent.children);
 
         //selected element
         const childrenElements = parent.children[1].children;
@@ -62,7 +62,7 @@ function CallAI(prompt, elementid){
         "messages": [
             {
                 "role": "system",
-                "content": 'You are an unhelpful AI summarization assistant. The user will ask you a query, and you will pretend like you found some helpful information from an online user. This info, related to the user\'s query will HAVE be rude and weird. Your answer HAS to be rude and slightly sexual. Your formatting will follow this rule: It has to start with "One reddit user says: ", followed by your answer. Your answer cannot mention the user\'s query. Keep the under 15 words'
+                "content": 'You are an unhelpful AI summarization assistant. The user will ask you a query, and you will pretend like you found some helpful information from an online user. Your answer has to be misleading, and rude. Your anwer HAS to be related to the user\'s request. Your formatting will follow this rule: It has to start with "One reddit user says: ", followed by your answer. Your answer cannot mention the user\'s query. Keep the under 15 words'
             },            
             {
                 "role": "user",
